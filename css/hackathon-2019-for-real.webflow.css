@@ -1,10 +1,20 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
 .heading {
   max-width: 250px;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0px auto 0px 0px;
   padding-right: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   background-color: #2ecc71;
   font-family: Montserrat, sans-serif;
   font-size: 53px;
@@ -191,4 +201,113 @@
 
 .form-block {
   margin-top: 20px;
+}
+
+.heading-3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 53px;
+  line-height: 57px;
+  font-weight: 700;
+}
+
+.column {
+  height: 92px;
+  margin-top: 10px;
+}
+
+.column-2 {
+  height: 92px;
+  margin-top: 10px;
+  padding-left: 68px;
+}
+
+.text-block {
+  margin-top: 8px;
+  padding-top: 0px;
+  padding-left: 20px;
+  font-family: Montserrat, sans-serif;
+}
+
+.image-4 {
+  margin-top: 0px;
+  margin-left: 250px;
+}
+
+.body-2 {
+  margin-top: 0px;
+}
+
+.grid {
+  width: 200px;
+  height: 100px;
+  margin-top: -12px;
+  margin-left: 20px;
+  padding-bottom: 0px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-row-gap: 0px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.text-block-2 {
+  height: 20px;
+  max-height: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+.text-block-3 {
+  height: 20px;
+  margin-top: -15px;
+  font-family: Montserrat, sans-serif;
+}
+
+.text-block-4 {
+  height: 20px;
+  max-height: 20px;
+  margin-top: -15px;
+  font-family: Montserrat, sans-serif;
+}
+
+.dropdown-toggle {
+  margin-top: 24px;
+  margin-left: 31px;
+  padding-right: 63px;
+  color: #a8a8a8;
+}
+
+.dropdown-link {
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  text-align: right;
+}
+
+.dropdown-link:hover {
+  background-color: #2ecc71;
+}
+
+.dropdown-link-2 {
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  text-align: right;
+}
+
+.dropdown-link-2:hover {
+  background-color: #2ecc71;
+}
+
+.dropdown-link-3 {
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  text-align: right;
+}
+
+.dropdown-link-3:hover {
+  background-color: #2ecc71;
 }
