@@ -3,6 +3,7 @@ var password
 
 
 document.addEventListener("DOMContentLoaded", function(){
+    store('employees', [{'email': 'andreyborro@gmail.com', 'firstname': 'Andrey', 'lastname':'Borro', 'password': 'yeet', 'scores': [3, 4]}])
     if(load('current_user')){
         window.location.href = 'dashboard.html'
     }
@@ -16,7 +17,7 @@ document.getElementById('LoginButton').addEventListener("click", function(){
         emp.forEach(function(item){
             if(item.email === email && item.password === password){
                 store('current_user', item)
-                if(item.password.startWith("temp")){
+                if(item.password.startsWith("temp")){
                     window.location.href = 'first-login.html'
                 }
                 else{

@@ -19,6 +19,15 @@
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body-2">
+  <style>
+    .zoom {
+      transition: transform .3s; /* Animation */
+    }
+
+    .zoom:hover {
+      transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+  </style>
   <div>
     <div class="w-row">
       <div class="column w-col w-col-6">
@@ -95,7 +104,7 @@
     <div class="columns w-row">
       <div class="w-col w-col-6">
         <div class="w-layout-grid grid-3">
-          <h1 class="heading-4">daily journal</h1>
+            <h1 class="heading-4">daily journal</h1>
           <div class="w-form">
             <form id="email-form" name="email-form" data-name="Email Form" class="form-2">
                <label for="Field-2" class="field-label-3">daily accomplishments</label>
