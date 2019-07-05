@@ -10,6 +10,48 @@
   grid-column-gap: 16px;
 }
 
+.w-checkbox {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.w-checkbox:before {
+  content: ' ';
+  display: table;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+}
+
+.w-checkbox:after {
+  content: ' ';
+  display: table;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  clear: both;
+}
+
+.w-checkbox-input {
+  float: left;
+  margin-bottom: 0px;
+  margin-left: -20px;
+  margin-right: 0px;
+  margin-top: 4px;
+  line-height: normal;
+}
+
 .heading {
   max-width: 250px;
   margin: 20px auto 0px;
@@ -620,12 +662,12 @@
   background-color: #2ecc71;
 }
 
-.dropdown-list {
+.dropdown-list-manager {
   margin-right: 0px;
   padding-right: 0px;
 }
 
-.dropdown-list.w--open {
+.dropdown-list-manager.w--open {
   width: auto;
   margin-right: 0px;
   padding-right: 0px;
@@ -759,6 +801,65 @@
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   text-align: center;
+}
+
+.form-block-3 {
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.field-label-10 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
+.textarea-4 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
+.checkbox-field {
+  width: 100%;
+  margin-right: 25%;
+  margin-left: 38%;
+  padding-left: 25px;
+}
+
+.checkbox-label {
+  font-family: Montserrat, sans-serif;
+}
+
+.field-label-11 {
+  margin-top: 35px;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
+.textarea-5 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
+.checkbox-field-2 {
+  margin-left: 38%;
+  padding-left: 25px;
+  font-family: Montserrat, sans-serif;
+}
+
+.submit-button-5 {
+  margin-top: 35px;
+  margin-left: 44%;
+  background-color: #2ecc71;
+  font-family: Montserrat, sans-serif;
+}
+
+.heading-16 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
+.section-5 {
+  margin-top: 20px;
 }
 
 #w-node-ea1fdce826d5-4e1ef23a {
