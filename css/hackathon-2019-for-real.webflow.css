@@ -10,7 +10,7 @@
   grid-column-gap: 16px;
 }
 
-.toplink:hover, a:visited, a:link, a:active
+.a:hover, a:visited, a:link, a:active
 {
     text-decoration: none;
     color:#000000;

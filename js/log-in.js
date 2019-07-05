@@ -1,6 +1,13 @@
 var email
 var password
 
+
+document.addEventListener("DOMContentLoaded", function(){
+    if(load('current_user')){
+        window.location.href = 'dashboard.html'
+    }
+})
+
 document.getElementById('LoginButton').addEventListener("click", function(){
     email = document.getElementById('Email-2').value
     password = document.getElementById('Password').value
@@ -14,13 +21,6 @@ document.getElementById('LoginButton').addEventListener("click", function(){
         })
     }
 });
-
-
-
-
-
-
-
 
 
 
