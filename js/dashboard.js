@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    //store('employees', [{'email': 'andreyborro@gmail.com', 'firstname': 'Andrey', 'lastname':'Borro', 'password': 'yeet'}])
+    store('employees', [{'email': 'andreyborro@gmail.com', 'firstname': 'Andrey', 'lastname':'Borro', 'password': 'yeet'}])
 });
 
 
