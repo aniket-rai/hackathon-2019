@@ -3,7 +3,7 @@ var password
 
 
 document.addEventListener("DOMContentLoaded", function(){
-    store('employees', [{'email': 'andreyborro@gmail.com', 'firstname': 'Andrey', 'lastname':'Borro', 'password': 'yeet', 'scores': [3, 4]}])
+    //store('employees', [{'email': 'andreyborro@gmail.com', 'firstname': 'Andrey', 'lastname':'Borro', 'password': 'yeet', 'scores': [5,5,5,4,3,5,3,1]}])
     if(load('current_user')){
         window.location.href = 'dashboard.html'
     }

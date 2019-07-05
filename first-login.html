@@ -66,17 +66,17 @@
   <div class="w-container">
     <h1 class="heading-11">welcome to propos! we&#x27;re excited you&#x27;re here!</h1>
     <div class="form-block w-form">
-      <form id="email-form" name="email-form" data-name="Email Form" class="form"><label for="Email-2" class="field-label">Enter Your New Password</label><input type="text" class="text-field-2 w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your new password" id="Email-2"><label for="Password" class="field-label-2">Confirm Your New Password</label><input type="password" class="text-field w-input" maxlength="256" name="Password" data-name="Password" placeholder="Re-enter your password" id="Password" required=""><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button first-login w-button"></form>
-      <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
-      </div>
-      <div class="w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.</div>
-      </div>
-    </div>
+      <form id="email-form" name="email-form" data-name="Email Form" class="form">
+        <label for="Email-2" class="field-label">Enter Your New Password</label>
+        <input type="password" class="text-field-2 w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your new password" id="pass1">
+        <label for="Password" class="field-label-2">Confirm Your New Password</label>
+        <input type="password" class="text-field w-input" maxlength="256" name="Password" data-name="Password" placeholder="Re-enter your password" id="pass2" required="">
+        <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button first-login w-button" onclick='newPass()'>
+      </form>
   </div>
   <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="js/first-login.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
