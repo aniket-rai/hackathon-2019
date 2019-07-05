@@ -107,9 +107,9 @@
               <label class="field-label-5">for tomorrow</label>
               <textarea placeholder="What do you aim to achieve tomorrow?" maxlength="5000" id="field-5" name="field-5" class="textarea-3 w-input" style="resize: none;"></textarea>
 
-              <label for="Field-4" class="field-label-4" style="margin-top: 25px;">rate your performance today</label>
+              <label id='perf' for="Field-4" class="field-label-4" style="margin-top: 25px;">rate your performance today</label>
               <div class="slidecontainer">
-                <input type="range" min="1" max="5" value="3" class="slider">
+                <input id='slider' type="range" min="1" max="5" value="3" class="slider" oninput="updateScore()">
               </div>
 
               <style>
@@ -150,6 +150,20 @@
                     background: #ff0000;
                     cursor: pointer;
                   }
+
+                  .w-col.rating{
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    padding-top: 10px;
+                    padding-bottom: 15px;
+                    padding-left: 40px;
+                    font-family: Montserrat, sans-serif;
+                    font-size: 55px;
+                    line-height: 50px;
+                    font-weight: 500;
+                    color: #f1c40f;
+                    text-shadow: 2px 2px #000;
+                  }
                 </style>
 
               <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button"></form>
@@ -171,7 +185,7 @@
                 <h1 class="heading-5">monthly rating:</h1>
               </div>
             </div>
-            <div class="column-3 w-col w-col-3"></div>
+            <div id= 'rating' class="rating column-3 w-col w-col-3 "></div>
           </div>
           <h1 class="heading-6">performance review (July)</h1>
           <h1 class="heading-7">company goals<br>    -<br>    -<br>    -<br></h1>
