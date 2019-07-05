@@ -1098,7 +1098,7 @@ textarea.w-select {
   color: #222222;
 }
 .w-dropdown-link.w--current {
-  color: #0082f3;
+  backgroun-color: #2ecc71;
 }
 .w-nav[data-collapse="all"] .w-dropdown,
 .w-nav[data-collapse="all"] .w-dropdown-toggle {
