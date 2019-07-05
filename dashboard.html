@@ -98,16 +98,20 @@
           <h1 class="heading-4">daily journal</h1>
           <div class="w-form">
             <form id="email-form" name="email-form" data-name="Email Form" class="form-2">
-              <label for="Field-2" class="field-label-3">daily accomplishments</label>
-              <textarea name="Field-1" maxlength="5000" id="Field-2" placeholder="What is something you have achieved today?" data-name="Field 1" class="textarea w-input"></textarea>
+               <label for="Field-2" class="field-label-3">daily accomplishments</label>
+              <textarea name="Field-1" maxlength="5000" id="Field-2" placeholder="What is something you have achieved today?" data-name="Field 1" class="textarea w-input" style="resize: none;"></textarea>
+              
               <label for="Field-4" class="field-label-4">wider strategy</label>
-              <textarea placeholder="How were you in line with company goals?" maxlength="5000" id="Field-4" name="Field-2" data-name="Field 2" class="textarea-2 w-input"></textarea>
+              <textarea placeholder="How were you in line with company goals?" maxlength="5000" id="Field-4" name="Field-2" data-name="Field 2" class="textarea-2 w-input" style="resize: none;"></textarea>
+              
               <label class="field-label-5">for tomorrow</label>
-              <textarea placeholder="What do you aim to achieve tomorrow?" maxlength="5000" id="field-5" name="field-5" class="textarea-3 w-input"></textarea>
+              <textarea placeholder="What do you aim to achieve tomorrow?" maxlength="5000" id="field-5" name="field-5" class="textarea-3 w-input" style="resize: none;"></textarea>
+
               <label for="Field-4" class="field-label-4" style="margin-top: 25px;">rate your performance today</label>
               <div class="slidecontainer">
                 <input type="range" min="1" max="6" value="1" class="slider">
               </div>
+
               <style>
                 .slidecontainer {
                   width: 100%;
@@ -145,7 +149,9 @@
                     cursor: pointer;
                   }
                 </style>
+
               <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button"></form>
+              
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>

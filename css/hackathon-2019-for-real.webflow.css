@@ -25,6 +25,7 @@
 
 .heading.dashboard {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -41,7 +42,7 @@
   margin-right: auto;
   margin-left: auto;
   font-family: Montserrat, sans-serif;
-  color: #8d8d8d;
+  color: #fffff0;
   text-align: center;
 }
 
@@ -53,24 +54,30 @@
   color: #333;
 }
 
-.nav-link.active {
+.nav-link.w--current {
   color: #333;
 }
 
-.nav-link-2 {
-  margin-left: 356px;
+.nav-link.active {
+  color: #333;
 }
 
 .nav-link-3 {
   margin-right: 385px;
   margin-left: 0px;
-  -webkit-transition: color 200ms ease;
-  transition: color 200ms ease;
   font-family: Montserrat, sans-serif;
-  color: #8d8d8d;
+  color: #fffff0;
 }
 
 .nav-link-3:hover {
+  color: #333;
+}
+
+.nav-link-3:focus {
+  color: #333;
+}
+
+.nav-link-3.w--current {
   color: #333;
 }
 
@@ -173,6 +180,15 @@
   font-family: Montserrat, sans-serif;
 }
 
+.submit-button.first-login {
+  margin-top: 20px;
+  margin-right: 75%;
+  margin-left: 41%;
+  font-family: Montserrat, sans-serif;
+  background-color: #2ecc71;
+  color: #333;
+}
+
 .body {
   margin-right: auto;
   margin-left: auto;
@@ -196,15 +212,17 @@
 }
 
 .text-field {
+  font-family: Montserrat, sans-serif;
   text-align: center;
 }
 
 .text-field-2 {
+  font-family: Montserrat, sans-serif;
   text-align: center;
 }
 
 .form-block {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .heading-3 {
@@ -618,4 +636,11 @@
   width: auto;
   margin-right: 0px;
   padding-right: 0px;
+}
+
+.heading-11 {
+  margin-top: 45px;
+  font-family: Montserrat, sans-serif;
+  line-height: 50px;
+  text-align: center;
 }
