@@ -333,7 +333,8 @@
 }
 
 .grid-3 {
-  padding-left: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
   grid-row-gap: 16px;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
@@ -348,6 +349,7 @@
   padding-bottom: 15px;
   padding-left: 22px;
   background-color: #e74c3c;
+  box-shadow: 1px 1px 3px 0 #000;
   font-family: Montserrat, sans-serif;
   line-height: 50px;
 }
@@ -401,6 +403,7 @@
   padding-bottom: 15px;
   padding-left: 22px;
   background-color: #f1c40f;
+  box-shadow: 1px 1px 3px 0 #000;
   font-family: Montserrat, sans-serif;
   font-size: 38px;
   line-height: 50px;
@@ -428,6 +431,7 @@
   padding-bottom: 15px;
   padding-left: 23px;
   background-color: #25ccf7;
+  box-shadow: 1px 1px 3px 0 #000;
   font-family: Montserrat, sans-serif;
   line-height: 50px;
 }
@@ -439,6 +443,7 @@
   padding-bottom: 15px;
   padding-left: 22px;
   background-color: #e056fd;
+  box-shadow: 1px 1px 3px 0 #000;
   font-family: Montserrat, sans-serif;
   line-height: 50px;
 }
@@ -454,6 +459,7 @@
   padding-bottom: 14px;
   padding-left: 22px;
   background-color: #2ecc71;
+  box-shadow: 1px 1px 3px 0 #000;
   font-family: Montserrat, sans-serif;
   line-height: 50px;
 }
@@ -524,4 +530,24 @@
 
 .radio-button-label {
   font-family: Montserrat, sans-serif;
+}
+
+.radio-button {
+  background-color: red;
+}
+
+.text-field-7 {
+  font-family: Montserrat, sans-serif;
+}
+
+.field-label-9 {
+  font-family: Montserrat, sans-serif;
+}
+
+.submit-button-4 {
+  display: block;
+  background-color: #e74c3c;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  line-height: 5px;
 }
