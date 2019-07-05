@@ -8,7 +8,7 @@ document.getElementById('LoginButton').addEventListener("click", function(){
     if(emp){
         emp.forEach(function(item){
             if(item.email === email && item.password === password){
-                store('current_user', email)
+                store('current_user', item)
                 window.location.href = 'dashboard.html'
             }
         })
