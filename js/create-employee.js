@@ -2,10 +2,6 @@ document.addEventListener("DOMContentLoaded", function(){
     
 });
 
-
-
-
-
 function store(key, val){
     localStorage.setItem(key, JSON.stringify(val))
 }

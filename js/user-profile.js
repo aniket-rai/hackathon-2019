@@ -9,3 +9,17 @@ document.addEventListener("DOMContentLoaded", function(){
         window.location.href = 'index.html'
     }
 });
+
+document.getElementById('signout').addEventListener('click', function(){
+    store('current_user', null)
+    window.location.href = 'dashboard.html'
+})
+
+
+function store(key, val){
+    localStorage.setItem(key, JSON.stringify(val))
+}
+
+function load(key){
+    return JSON.parse(localStorage.getItem(key))
+}

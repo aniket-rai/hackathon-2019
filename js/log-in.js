@@ -16,7 +16,7 @@ document.getElementById('LoginButton').addEventListener("click", function(){
         emp.forEach(function(item){
             if(item.email === email && item.password === password){
                 store('current_user', item)
-                if(item.password.startWith("temp")){
+                if(item.password.startsWith("temp")){
                     window.location.href = 'first-login.html'
                 }
                 else{
