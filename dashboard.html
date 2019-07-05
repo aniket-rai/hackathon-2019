@@ -102,8 +102,8 @@
     </div>
   </div>
   <div>
-    <div class="columns w-row">
-      <div class="w-col w-col-6">
+    <div class="columns w-row" id="page" style="transition: opacity 2s ease-in;">
+      <div class="w-col w-col-6" id="left" style="transition: opacity 2s ease-in;"> 
         <div class="w-layout-grid grid-3">
             <h1 class="heading-4">daily journal</h1>
           <div class="w-form">
@@ -187,7 +187,7 @@
           </div>
         </div>
       </div>
-      <div class="w-col w-col-6">
+      <div class="w-col w-col-6" id="right" style="transition: opacity 2s ease-in;">
         <div class="w-layout-grid grid-2">
           <div class="w-row">
             <div class="w-col w-col-9">
@@ -197,13 +197,21 @@
             </div>
             <div id= 'rating' class="rating column-3 w-col w-col-3 "></div>
           </div>
-          <h1 class="heading-6">performance review (July)</h1>
-          <h1 class="heading-7">company goals<br>    -<br>    -<br>    -<br></h1>
-          <h1 class="heading-9">what&#x27;s on your mind?</h1>
+          <div class="zoom">
+            <h1 class="heading-6">performance review (July)</h1>
+          </div>
+          <div class="zoom">
+            <h1 class="heading-7">company goals<br>    -<br>    -<br>    -<br></h1>
+          </div>
+          <div class="zoom">
+            <a href="whats-on-your-mind.html" style="color: #333;"><h1 class="heading-9">what&#x27;s on your mind?</h1></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <script>
+  </script>
   <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="js/dashboard.js" type="text/javascript"></script>
