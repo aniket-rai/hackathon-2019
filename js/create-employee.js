@@ -18,6 +18,7 @@ function submitEmployee(){
         emp = load('employees')
         emp.push({'firstname': fn, 'lastname': ln, 'password': p, 'email': e, 'scores': [3]})
         store('employees', emp)
+        window.location.href = 'dashboard.html'
     }
 }
 
