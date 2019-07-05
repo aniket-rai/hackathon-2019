@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
 function submitEmployee(){
     load('employees').forEach(function(element){
         if(element.email === document.getElementById('user_email').value){
-            return
+            window.location.reload()
         }
     })
 
