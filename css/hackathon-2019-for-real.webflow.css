@@ -10,12 +10,6 @@
   grid-column-gap: 16px;
 }
 
-.a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
-    color:#000000;
-}
-
 .heading {
   max-width: 250px;
   margin: 20px auto 0px;
@@ -27,27 +21,9 @@
   line-height: 57px;
   font-weight: 700;
   text-align: center;
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
 }
 
 .heading.dashboard {
-  max-width: 250px;
-  margin: 20px auto 0px;
-  padding-right: 0px;
-  padding-bottom: 12px;
-  background-color: #2ecc71;
-  font-family: Montserrat, sans-serif;
-  font-size: 53px;
-  line-height: 57px;
-  font-weight: 700;
-  text-align: center;
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
   margin-left: 10px;
 }
 
@@ -574,4 +550,72 @@
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   line-height: 5px;
+}
+
+.dropdown-link-4 {
+  font-family: Montserrat, sans-serif;
+  text-align: right;
+}
+
+.dropdown-link-4:hover {
+  background-color: #2ecc71;
+}
+
+.dropdown-link-5 {
+  font-family: Montserrat, sans-serif;
+  text-align: right;
+}
+
+.dropdown-link-5:hover {
+  background-color: #2ecc71;
+}
+
+.dropdown-link-6 {
+  font-family: Montserrat, sans-serif;
+  text-align: right;
+}
+
+.dropdown-link-6:hover {
+  background-color: #2ecc71;
+}
+
+.dropdown-link-7 {
+  font-family: Montserrat, sans-serif;
+  text-align: right;
+}
+
+.dropdown-link-7:hover {
+  background-color: #2ecc71;
+}
+
+.dropdown-link-8 {
+  overflow: auto;
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  text-align: right;
+}
+
+.dropdown-link-8:hover {
+  background-color: #2ecc71;
+}
+
+.dropdown-link-9 {
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  text-align: right;
+}
+
+.dropdown-link-9:hover {
+  background-color: #2ecc71;
+}
+
+.dropdown-list {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.dropdown-list.w--open {
+  width: auto;
+  margin-right: 0px;
+  padding-right: 0px;
 }
