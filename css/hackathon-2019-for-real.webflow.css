@@ -12,7 +12,7 @@
 
 .heading {
   max-width: 250px;
-  margin: 0px auto 0px 0px;
+  margin: 20px auto 0px;
   padding-right: 0px;
   padding-bottom: 12px;
   background-color: #2ecc71;
@@ -21,6 +21,10 @@
   line-height: 57px;
   font-weight: 700;
   text-align: center;
+}
+
+.heading.dashboard {
+  margin-left: 10px;
 }
 
 .navbar {
@@ -101,7 +105,7 @@
 }
 
 .image-3 {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .utility-page-wrap {
@@ -212,7 +216,7 @@
 
 .column {
   height: 92px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .column-2 {
@@ -229,8 +233,12 @@
 }
 
 .image-4 {
+  position: static;
+  right: 5%;
+  width: 30%;
+  height: 100%;
   margin-top: 0px;
-  margin-left: 250px;
+  margin-left: 215px;
 }
 
 .body-2 {
@@ -240,7 +248,7 @@
 .grid {
   width: 200px;
   height: 100px;
-  margin-top: -12px;
+  margin-top: -4px;
   margin-left: 20px;
   padding-bottom: 0px;
   -webkit-box-align: center;
@@ -310,4 +318,15 @@
 
 .dropdown-link-3:hover {
   background-color: #2ecc71;
+}
+
+.grid-2 {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.nav-menu {
+  margin-top: -15px;
 }
