@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     updateScore()
     updateRating()
-    store('employees', [{
+    /*store('employees', [{
         'email': 'andreyborro@gmail.com', 
         'firstname': 'Andrey', 
         'lastname':'Borro', 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
         ],
         'submitted_daily' : false,
         'div' : 'Sales'
-    }])
+    }])*/
     store('goals', ['Facilitate customer trust', 'Engage outdated methodologies', 'Nuture ethical work habits & mindsets'])
 
     g = load('goals')

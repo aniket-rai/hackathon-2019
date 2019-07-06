@@ -46,7 +46,7 @@ function my_callback(item){
 
         document.getElementById('title').textContent = item.title
         document.getElementById('text').textContent = item.msg
-        document.getElementById('author').textContent = 'From: ' + item.title
+        document.getElementById('author').textContent = 'From: ' + item.author
 
         store('current_user', c)
     }

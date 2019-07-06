@@ -15,9 +15,9 @@ function funcLeft(){
                 item.inbox.push({
                     'title' : 'You got a Shoutout!',
                     'author' : author,
-                    'msg' : msg
+                    'msg' : msg,
+                    'unread' : true
                 })
-                alert(item.inbox)
                 store('employees', emp)
             }
         })
