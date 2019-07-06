@@ -92,12 +92,12 @@
                   <div class="dropdown-toggle w-dropdown-toggle">
                     <div class="w-icon-dropdown-toggle"></div>
                   </div>
-                  <nav class="dropdown-list-manager w-dropdown-list" style="margin-top: -20px;">
+                  <nav class="dropdown-list-manager w-dropdown-list">
                     <a href="#" class="dropdown-link w-dropdown-link">Profile</a>
                     <a href="#" class="dropdown-link-2 w-dropdown-link">Settings</a>
                     <a href="create-employee.html" class="dropdown-link-7 w-dropdown-link w-current">Employee<br>Creation</a>
                     <a href="company-goals.html" class="dropdown-link-8 w-dropdown-link">Company<br>Goals</a>
-                    <a href="#" class="dropdown-link-9 w-dropdown-link">Review<br>Edit</a>
+                    <a href="review-edit.html" class="dropdown-link-9 w-dropdown-link">Review<br>Edit</a>
                     <a id='signout' href="#" class="dropdown-link-3 w-dropdown-link">Sign Out</a>
                   </nav>
                 </div>
@@ -112,7 +112,7 @@
     <div class="columns w-row" id="page" style="transition: opacity 2s ease-in;">
       <div class="w-col w-col-6" id="left" style="transition: opacity 2s ease-in;"> 
         <div class="w-layout-grid grid-3 zoom" style='background-color: white;'>
-            <h1 class="heading-4">daily journal</h1>
+            <h1 class="heading-4" style="cursor: default;">daily journal</h1>
           <div class="w-form">
             <form id="journal">
               <label for="Field-2" class="field-label-3">daily accomplishments</label>
@@ -204,16 +204,16 @@
         <div class="w-layout-grid grid-2">
           <div class="w-row">
             <div class="w-col w-col-9">
-              <div class="w-container">
+              <div class="w-container" style="cursor: default;">
                 <h1 class="heading-5">monthly rating:</h1>
               </div>
             </div>
             <div id= 'rating' class="rating column-3 w-col w-col-3 "></div>
           </div>
-          <div class="zoom">
+          <div class="zoom" style="cursor: pointer;">
             <h1 class="heading-6">performance review (July)</h1>
           </div>
-          <div class="zoom" onclick="window.location='company-goals.html';" style="box-shadow: 1px 1px 3px 0 #000">
+          <div class="zoom" onclick="window.location='company-goals.html';" style="box-shadow: 1px 1px 3px 0 #000; cursor: pointer;">
             <h1 class="heading-7" style="box-shadow: none">company goals</h1>
             <h1 class="heading-7" id="g1" style="outline-width: 0px; font-size: 25px; box-shadow: none; padding-top: 0px; padding-bottom: 0px;">
             &nbsp;&nbsp;&nbsp;&nbsp;<span>&#8226;</span> company g 1</h1>
