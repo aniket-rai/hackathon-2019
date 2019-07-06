@@ -45,7 +45,15 @@ function submitFunction(){
     if(load('current_user').submitted_monthly){return}
     saveFunction()
     c = load('current_user')
+    e = load('employees')
     c.submitted_monthly = true
+    e.forEach(function(item){
+        if(item.email === c.email){
+            item.submitted_monthly = c.submitted_monthly
+        }
+    })
+    
+    store('employees', e)
     store('current_user', c)
     window.location.reload()
 }

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     updateScore()
     updateRating()
-    store('employees', [{
+    /*store('employees', [{
         'email': 'andreyborro@gmail.com', 
         'firstname': 'Andrey', 
         'lastname':'Borro', 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(){
         'submitted_monthly': false,
         'div' : 'Sales',
         'answers': ['','','']
-    }])
+    }])*/
     store('goals', ['Facilitate customer trust', 'Engage outdated methodologies', 'Nuture ethical work habits & mindsets'])
     //store('questions', ['How do you feel about your performance this month?', 'List 3 key moments where you utilised company frameworks', 'What is one thing that we could do tomorrow to facilitate better results from both you and the team?'])
 
