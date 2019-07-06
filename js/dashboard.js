@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function(){
         'password': 'yeet', 
         'scores': [3, 4],
         'inbox' : [],
-        'submitted_daily' : false
+        'submitted_daily' : false,
+        'div' : 'Sales'
     }])*/
     store('goals', ['Facilitate customer trust', 'Engage outdated methodologies', 'Nuture ethical work habits & mindsets'])
 
@@ -21,6 +22,15 @@ document.addEventListener("DOMContentLoaded", function(){
         disableForm()
     }
 
+    icn = document.getElementById('inbox')
+
+    i = load('current_user').inbox
+
+    i.forEach(function(item){
+        if(item.unread === true){
+            icn.src = 'images/inbox2.png'
+        }
+    })
 });
 
 
