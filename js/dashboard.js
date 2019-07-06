@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
         'lastname':'Borro', 
         'password': 'yeet', 
         'scores': [3, 4],
+        'scores_m': [3, 5],
         'inbox' : [
             {
             'title': "You've got Mail!",
