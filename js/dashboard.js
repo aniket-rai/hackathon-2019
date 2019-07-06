@@ -29,6 +29,7 @@ function submitReport(){
     document.getElementById("f1").disabled = true;
     document.getElementById("f2").disabled = true;
     document.getElementById("f3").disabled = true;
+    document.getElementById("button").disabled = true;
 }
 
 
