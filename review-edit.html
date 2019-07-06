@@ -20,7 +20,10 @@
 </head>
 <body class="body-2">
   <script>
-    document.getElementById('email').setAttribute('value', localStorage.getItem('email'));
+    document.getElementById('q1').setAttribute('value', localStorage.getItem('question1'));
+    document.getElementById('q2').setAttribute('value', localStorage.getItem('question2'));
+    document.getElementById('q3').setAttribute('value', localStorage.getItem('question3'));
+  </script>
   <div>
     <div class="w-row">
       <div class="column w-col w-col-6">
@@ -109,17 +112,17 @@
       <form id="email-form" name="email-form" data-name="Email Form">
 
         <label for="name" class="review-edit-label" style="margin-top: 20px;">First performance review question</label>
-        <input type="text" class="w-input" maxlength="256" name="field" data-name="Field" placeholder="Enter your question here" id="q1" readonly>
+        <input type="text" class="w-input" maxlength="256" name="field" data-name="Field" placeholder="Enter your question here" id="q1" value="" readonly>
         <input type="submit" value="Click to edit" data-wait="Please wait..." class="review-edit-btn w-button" id="btn1" 
         onclick="document.getElementById('q1').readOnly = false;">
 
         <label for="name" class="review-edit-label" style="margin-top: 20px;">Second performance review question</label>
-        <input type="text" class="w-input" maxlength="256" name="field" data-name="Field" placeholder="Enter your question here" id="q2" readonly>
+        <input type="text" class="w-input" maxlength="256" name="field" data-name="Field" placeholder="Enter your question here" id="q2" value="" readonly>
         <input type="submit" value="Click to edit" data-wait="Please wait..." class="review-edit-btn w-button" id="btn1" 
         onclick="document.getElementById('q2').readOnly = false;">
 
         <label for="name" class="review-edit-label" style="margin-top: 20px;">Third performance review question</label>
-        <input type="text" class="w-input" maxlength="256" name="field" data-name="Field" placeholder="Enter your question here" id="q3" readonly>
+        <input type="text" class="w-input" maxlength="256" name="field" data-name="Field" placeholder="Enter your question here" id="q3" value="" readonly>
         <input type="submit" value="Click to edit" data-wait="Please wait..." class="review-edit-btn w-button" id="btn1" 
         onclick="document.getElementById('q3').readOnly = false;">
 
