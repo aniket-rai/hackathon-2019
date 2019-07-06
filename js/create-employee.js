@@ -23,7 +23,11 @@ function submitEmployee(){
             'email': e, 
             'scores': [3], 
             'manager': load('current_user').email,
-            'inbox': []
+            'inbox': [],
+            'div': 'Sales',
+            'answers' : [0,0,0],
+            'submitted_daily': false,
+            'submitted_monthly': false
         })
         store('employees', emp)
         window.location.href = 'dashboard.html'

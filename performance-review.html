@@ -105,10 +105,12 @@
   <div class="section-8"></div>
   <div class="section-7" style="margin-left: 20%; margin-right:30%">
     <div class="w-form">
-      <form id="email-form" name="email-form" data-name="Email Form"><label for="name" class="field-label-12">First performance review question</label><textarea placeholder="Write your answer here" maxlength="5000" id="field" name="field" class="w-input" style="resize: none"></textarea><label for="email" class="field-label-13">Second performance review question</label><textarea style="resize: none" placeholder="Write your answer here" maxlength="5000" id="field-2" name="field-2" class="w-input"></textarea><label class="field-label-14">Third performance review question</label><textarea placeholder="Write your answer here" maxlength="5000" id="field-3" name="field-3" class="textarea-7 w-input" style="resize: none"></textarea>
+      <form id="email-form" name="email-form" data-name="Email Form"><label for="name" class="field-label-12" id='q1'>First performance review question</label><textarea placeholder="Write your answer here" maxlength="5000" id="field" name="field" class="w-input" style="resize: none"></textarea>
+        <label for="email" id='q2' class="field-label-13">Second performance review question</label><textarea style="resize: none" placeholder="Write your answer here" maxlength="5000" id="field-2" name="field-2" class="w-input"></textarea>
+        <label id='q3' class="field-label-14">Third performance review question</label><textarea placeholder="Write your answer here" maxlength="5000" id="field-3" name="field-3" class="textarea-7 w-input" style="resize: none"></textarea>
         <div style="display: inline;">
-          <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-7 w-button" style="margin-right: 20px;">
-          <input type="submit" value="Save" data-wait="Please wait..." class="submit-button-7 w-button">
+          <input type="submit" id='submit' value="Submit" data-wait="Please wait..." class="submit-button-7 w-button" style="margin-right: 20px;" onclick='submitFunction()'>
+          <input type="submit" id='save' value="Save" data-wait="Please wait..." class="submit-button-7 w-button" onclick='saveFunction()'>
         </div>
       </form>
 
@@ -117,6 +119,7 @@
   <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="js/user-profile.js" type="text/javascript"></script>
+  <script src="js/performance-review.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
