@@ -1,13 +1,25 @@
 document.addEventListener("DOMContentLoaded", function(){
     updateScore()
     updateRating()
-    //store('employees', [{'email': 'andreyborro@gmail.com', 'firstname': 'Andrey', 'lastname':'Borro', 'password': 'yeet', 'scores': [3, 4]}])
+    /*store('employees', [{
+        'email': 'andreyborro@gmail.com', 
+        'firstname': 'Andrey', 
+        'lastname':'Borro', 
+        'password': 'yeet', 
+        'scores': [3, 4],
+        'inbox' : [],
+        'submitted_daily' : false
+    }])*/
     store('goals', ['Facilitate customer trust', 'Engage outdated methodologies', 'Nuture ethical work habits & mindsets'])
 
     g = load('goals')
     document.getElementById('g1').textContent = '• ' + g[0];
     document.getElementById('g2').textContent = '• ' + g[1];
     document.getElementById('g3').textContent = '• ' + g[2];
+
+    if(load('current_user').submitted_daily){
+        disableForm()
+    }
 
 });
 
@@ -21,14 +33,23 @@ function submitReport(){
     emp.forEach(function(item){
         if(item.email === c.email){
             item.scores = c.scores
+            c.submitted_daily = true;
+            item.submitted_daily = true;
         }
     })
     store('employees', emp)
+    store('current_user', c)
     updateRating()
+    disableForm()
+}
+
+function disableForm(){
     document.getElementById("slider").disabled = true;
     document.getElementById("f1").disabled = true;
     document.getElementById("f2").disabled = true;
     document.getElementById("f3").disabled = true;
+    document.getElementById('subbutton').disabled = true;
+    document.getElementById('subbutton').value = "Submitted"
 }
 
 
