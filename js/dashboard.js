@@ -15,20 +15,6 @@ document.addEventListener("DOMContentLoaded", function(){
             'msg': 'ahoy there mateys!',
             'unread' : true
             },
-
-            {
-            'title': "You've got Mail2!",
-            'author': 'Andrey Borro',
-            'msg': 'ahoy there boyos!',
-            'unread' : true
-            },
-
-            {
-            'title': "You've got Mail3!",
-            'author': 'Yeetmaster',
-            'msg': 'ahoy there daddies!',
-            'unread' : true
-            }
         ],
         'submitted_daily' : false,
         'submitted_monthly': false,
