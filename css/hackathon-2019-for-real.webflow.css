@@ -863,7 +863,7 @@ body{
 }
 
 .textarea-5 {
-  width: auto;
+  /*width: auto;*/
   max-height: none;
   margin-right: 0px;
   margin-left: 0px;
