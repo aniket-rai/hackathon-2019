@@ -25,7 +25,27 @@ function funcLeft(){
 }
 
 function funcRight(){
-    alert('yote')
+    msg = document.getElementById('field-2').value
+    anon = document.getElementById('r_checkbox').checked
+
+    if(msg){
+        m = load('current_user').manager
+        emp = load('employees')
+        emp.forEach(function(item){
+            if(item.email === m){
+                author = ''
+                if(!anon){author = c.firstname + ' ' + c.lastname}
+                else{author = 'Anonymous'}
+                item.inbox.push({
+                    'title' : "You've received feedback",
+                    'author' : author,
+                    'msg' : msg,
+                    'unread' : true
+                })
+                store('employees', emp)
+            }
+        })
+    }
 }
 
 

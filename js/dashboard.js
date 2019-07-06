@@ -78,7 +78,9 @@ function submitReport(){
 }
 
 function disableForm(){
+    document.getElementById('slider').value = load('current_user').scores.slice(-1)[0]
     document.getElementById("slider").disabled = true;
+    updateScore()
     document.getElementById("f1").disabled = true;
     document.getElementById("f2").disabled = true;
     document.getElementById("f3").disabled = true;
