@@ -7,12 +7,28 @@ document.addEventListener("DOMContentLoaded", function(){
         'lastname':'Borro', 
         'password': 'yeet', 
         'scores': [3, 4],
-        'inbox' : [{
+        'inbox' : [
+            {
             'title': "You've got Mail!",
             'author': 'Andrey Borro',
             'msg': 'ahoy there mateys!',
             'unread' : true
-        }],
+            },
+
+            {
+            'title': "You've got Mail2!",
+            'author': 'Andrey Borro',
+            'msg': 'ahoy there boyos!',
+            'unread' : true
+            },
+
+            {
+            'title': "You've got Mail3!",
+            'author': 'Yeetmaster',
+            'msg': 'ahoy there daddies!',
+            'unread' : true
+            }
+        ],
         'submitted_daily' : false,
         'div' : 'Sales'
     }])

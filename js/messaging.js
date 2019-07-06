@@ -34,7 +34,7 @@ function my_callback(item){
             }
         })
 
-        item.className = item.className + ' selected'
+        this.className = this.className + ' selected'
 
         c = load('current_user')
         i = c.inbox
@@ -43,6 +43,10 @@ function my_callback(item){
                 it2.unread = false
             }
         })
+
+        document.getElementById('title').textContent = item.title
+        document.getElementById('text').textContent = item.msg
+        document.getElementById('author').textContent = 'From: ' + item.title
 
         store('current_user', c)
     }
