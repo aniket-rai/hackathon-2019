@@ -22,7 +22,7 @@
   <div>
     <div class="w-row">
       <div class="column w-col w-col-6">
-        <h1 class="heading dashboard">propos</h1>
+        <a href='dashboard.html'><h1 class="heading dashboard">propos</h1></a>
       </div>
       <div class="column-2 w-col w-col-6">
         <div class="w-row">
@@ -31,9 +31,9 @@
             <div class="w-row">
               <div class="w-col w-col-7">
                 <div class="w-layout-grid grid">
-                  <div class="text-block-2">John Doe</div>
+                  <div id='name' class="text-block-2">John Doe</div>
                   <div class="text-block-3">ABC Company</div>
-                  <div class="text-block-4">john_doe@abc.com</div>
+                  <div id='email' class="text-block-4">john_doe@abc.com</div>
                 </div>
               </div>
               <div class="w-col w-col-5">
@@ -64,30 +64,20 @@
     <div class="columns-2 w-row">
       <div class="column-6 w-col w-col-6">
         <div class="w-form">
-          <form id="email-form-2" name="email-form-2" data-name="Email Form 2"><label for="f_name" class="field-label-10">want to send a friendly message?</label><input type="text" class="text-field-8 w-input" autofocus="true" maxlength="256" name="f_name" data-name="f_name" placeholder="First Name" id="f_name"><input type="text" class="text-field-9 w-input" autofocus="true" maxlength="256" name="l_name" data-name="l_name" placeholder="Last Name" id="l_name"><textarea style="resize: none;" name="msg" maxlength="5000" id="msg" placeholder="write your message here!" data-name="msg" autofocus="true" class="textarea-6 w-input"></textarea><label class="w-checkbox checkbox-field"><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" checked="" class="w-checkbox-input"><span class="checkbox-label w-form-label">Stay Anonymous</span></label><input type="submit" value="Send" data-wait="Please wait..." class="submit-button-6 w-button"></form>
-          <div class="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
+          <form id="email-form-2" name="email-form-2" data-name="Email Form 2"><label for="f_name" class="field-label-10">want to send a friendly message?</label><input type="text" class="text-field-8 w-input" autofocus="true" maxlength="256" name="f_name" data-name="f_name" placeholder="First Name" id="f_name"><input type="text" class="text-field-9 w-input" autofocus="true" maxlength="256" name="l_name" data-name="l_name" placeholder="Last Name" id="l_name"><textarea style="resize: none;" name="msg" maxlength="5000" id="msg" placeholder="write your message here!" data-name="msg" autofocus="true" class="textarea-6 w-input"></textarea><label class="w-checkbox checkbox-field"><input type="checkbox" id="l_checkbox" name="checkbox" data-name="Checkbox" checked="" class="w-checkbox-input"><span class="checkbox-label w-form-label">Stay Anonymous</span></label><input onclick='funcLeft()' type="submit" value="Send" data-wait="Please wait..." class="submit-button-6 w-button"></form>
         </div>
       </div>
       <div class="column-7 w-col w-col-6">
         <div class="w-form">
-          <form id="email-form-3" name="email-form-3" data-name="Email Form 3"><label class="field-label-11">unhappy, stressed, worried?</label><textarea name="field-2" maxlength="5000" id="field-2" placeholder="tell us what happened - your manager will get this directly" class="textarea-5 w-input" rows = "4.9" cols="68" style="resize: none;"></textarea><label class="w-checkbox checkbox-field" style="margin-top: 10px;"><input style="margin-top: 12px;" type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" checked="" class="w-checkbox-input"><span class="checkbox-label w-form-label" style="margin-top: 7.5px;">Stay Anonymous</span></label><input type="submit" value="Send" data-wait="Please wait..." class="submit-button-5 w-button"></form>
-          <div class="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
+          <form id="email-form-3" name="email-form-3" data-name="Email Form 3"><label class="field-label-11">unhappy, stressed, worried?</label><textarea name="field-2" maxlength="5000" id="field-2" placeholder="we're here for you - your manager will get this directly" class="textarea-5 w-input" rows = "4.9" cols="68" style="resize: none;"></textarea><label class="w-checkbox checkbox-field" style="margin-top: 10px;"><input style="margin-top: 12px;" type="checkbox" id="checkbox" name="r_checkbox" data-name="Checkbox" checked="" class="w-checkbox-input"><span class="checkbox-label w-form-label" style="margin-top: 7.5px;">Stay Anonymous</span></label><input type="submit" onclick='funcRight()' value="Send" data-wait="Please wait..." class="submit-button-5 w-button"></form>
         </div>
       </div>
     </div>
   </div>
   <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="js/whats-on-your-mind.js" type="text/javascript"></script>
+  <script src="js/user-profile.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
