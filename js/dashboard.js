@@ -1,16 +1,21 @@
 document.addEventListener("DOMContentLoaded", function(){
     updateScore()
     updateRating()
-    /*store('employees', [{
+    store('employees', [{
         'email': 'andreyborro@gmail.com', 
         'firstname': 'Andrey', 
         'lastname':'Borro', 
         'password': 'yeet', 
         'scores': [3, 4],
-        'inbox' : [],
+        'inbox' : [{
+            'title': "You've got Mail!",
+            'author': 'Andrey Borro',
+            'msg': 'ahoy there mateys!',
+            'unread' : true
+        }],
         'submitted_daily' : false,
         'div' : 'Sales'
-    }])*/
+    }])
     store('goals', ['Facilitate customer trust', 'Engage outdated methodologies', 'Nuture ethical work habits & mindsets'])
 
     g = load('goals')
