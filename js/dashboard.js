@@ -18,6 +18,10 @@ function submitReport(){
     })
     store('employees', emp)
     updateRating()
+    document.getElementById("slider").disabled = true;
+    document.getElementById("f1").disabled = true;
+    document.getElementById("f2").disabled = true;
+    document.getElementById("f3").disabled = true;
 }
 
 

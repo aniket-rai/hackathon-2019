@@ -18,7 +18,7 @@
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
 </head>
-<body class="body-2">
+<body>
   <style>
     .zoom {
       transition: transform .3s; /* Animation */
@@ -113,19 +113,21 @@
         <div class="w-layout-grid grid-3">
             <h1 class="heading-4">daily journal</h1>
           <div class="w-form">
-            <label for="Field-2" class="field-label-3">daily accomplishments</label>
-            <textarea name="Field-1" maxlength="5000" id="Field-2" placeholder="What is something you have achieved today?" data-name="Field 1" class="textarea w-input" style="resize: none;"></textarea>
-            
-            <label for="Field-4" class="field-label-4">wider strategy</label>
-            <textarea placeholder="How were you in line with company goals?" maxlength="5000" id="Field-4" name="Field-2" data-name="Field 2" class="textarea-2 w-input" style="resize: none;"></textarea>
-            
-            <label class="field-label-5">for tomorrow</label>
-            <textarea placeholder="What do you aim to achieve tomorrow?" maxlength="5000" id="field-5" name="field-5" class="textarea-3 w-input" style="resize: none;"></textarea>
+            <form id="journal">
+              <label for="Field-2" class="field-label-3">daily accomplishments</label>
+              <textarea name="Field-1" maxlength="5000" placeholder="What is something you have achieved today?" data-name="Field 1" class="textarea w-input" id="f1" style="resize: none;"></textarea>
+              
+              <label for="Field-4" class="field-label-4">wider strategy</label>
+              <textarea placeholder="How were you in line with company goals?" maxlength="5000" id="f2" name="Field-2" data-name="Field 2" class="textarea-2 w-input" style="resize: none;"></textarea>
+              
+              <label class="field-label-5">for tomorrow</label>
+              <textarea placeholder="What do you aim to achieve tomorrow?" maxlength="5000" id="f3" name="field-5" class="textarea-3 w-input" style="resize: none;"></textarea>
 
-            <label id='perf' for="Field-4" class="field-label-4" style="margin-top: 25px;">rate your performance today</label>
-            <div class="slidecontainer">
-              <input id='slider' type="range" min="1" max="5" value="3" class="slider" oninput="updateScore()">
-            </div>
+              <label id='perf' for="Field-4" class="field-label-4" style="margin-top: 25px;">rate your performance today</label>
+              <div class="slidecontainer">
+                <input id='slider' type="range" min="1" max="5" value="3" class="slider" oninput="updateScore()">
+              </div>
+            </form>
 
             <style>
               .slidecontainer {
@@ -173,9 +175,7 @@
 
                 </style>
 
-                
-              </style>
-            <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button" onclick='submitReport()'>
+            <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button" onclick='submitReport()' >
           </div>
         </div>
       </div>
@@ -192,9 +192,14 @@
           <div class="zoom">
             <h1 class="heading-6">performance review (July)</h1>
           </div>
-          <div class="zoom">
-            <h1 class="heading-7">company goals<br>    -<br>    -<br>    -<br></h1>
+          <div class="zoom" onclick="window.location='company-goals.html';" style="box-shadow: 1px 1px 3px 0 #000">
+            <h1 class="heading-7" style="box-shadow: none">company goals</h1>
+            <h1 class="heading-7" id="goal1" style="outline-width: 0px; font-size: 30px; box-shadow: none">&nbsp;&nbsp;&nbsp;&nbsp;- company goal 1</h1>
+            <h1 class="heading-7" id="goal2" style="outline-width: 0px; font-size: 30px; box-shadow: none">&nbsp;&nbsp;&nbsp;&nbsp;- company goal 1</h1>
+            <h1 class="heading-7" id="goal3" style="outline-width: 0px; font-size: 30px; box-shadow: none">&nbsp;&nbsp;&nbsp;&nbsp;- company goal 1</h1>
           </div>
+          <script type="text/javascript">
+          </script>
           <div class="zoom">
             <a href="whats-on-your-mind.html" style="color: #333;"><h1 class="heading-9">what&#x27;s on your mind?</h1></a>
           </div>
