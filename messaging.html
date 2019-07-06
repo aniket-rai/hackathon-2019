@@ -63,6 +63,65 @@
               user-select: none; /* Standard */
               margin-left: 10px;
             }
+
+            .columns-3 {
+              margin-right: 25%;
+              margin-left: 25%;
+              border-right: 1px solid #a3a3a3;
+            }
+
+            .inbox{
+              margin: 0px;
+              padding: 0px;
+              background-color: white;
+              height: 395px;
+              float: left;
+            }
+
+            .my_container{
+              border : 1px solid black;
+              box-shadow: 1px 1px 3px 0 #000;
+            }
+
+            .messages{
+              width: 30%;
+              box-sizing: content-box;
+              border-right: 1px solid black;
+            }
+            
+            .message{
+              width: 69.7%;
+              padding: 15px;
+            }
+            
+            .email{
+              text-align: left;
+              padding-left: 10px;
+              margin: 0px;
+              background-color: white;
+              border-top: 1px solid grey;
+              margin-top: -1px;
+              border-bottom: 1px solid grey;
+            }
+
+            .email.unread{
+              background-color: gainsboro;
+            }
+
+            .email.selected{
+              background-color: darkgrey;
+            }
+
+            .email h3{
+              font-size: 15px; 
+              margin: 3px;
+            }
+
+            .email p{
+              font-size: 15px; 
+              margin: 3px;
+            }
+
         </style>
       </div>
       <div class="column-2 w-col w-col-6">
@@ -72,9 +131,9 @@
             <div class="w-row">
               <div class="w-col w-col-7">
                 <div class="w-layout-grid grid">
-                  <div class="text-block-2">John Doe</div>
+                  <div id='name' class="text-block-2">John Doe</div>
                   <div class="text-block-3">ABC Company</div>
-                  <div class="text-block-4">john_doe@abc.com</div>
+                  <div id='email' class="text-block-4">john_doe@abc.com</div>
                 </div>
               </div>
               <div class="w-col w-col-5">
@@ -102,31 +161,33 @@
     <h1>stay connected | á propos</h1>
   </div>
   <div class="section-3">
-    <div class="columns-3 w-row">
-      <div class="column-8 w-col w-col-3">
-        <div class="w-layout-grid grid-8">
-          <h1 class="heading-21">people</h1>
-          <div class="text-block-8">Name<br>Subject</div>
-          <div class="text-block-8">Name<br>Subject</div>
-          <div class="text-block-8">Name<br>Subject</div>
-          <div class="text-block-8">Name<br>Subject</div>
-          <div class="text-block-8">Name<br>Subject</div>
-          <div class="text-block-8">Name<br>Subject</div>
+    <div class="columns-3 w-row my_container">
+      <div class= 'inbox messages' id='inbox'>
+        <h2>inbox</h2>
+        <div class='email'>
+          <h3>Name</h3>
+          <p>Title</p>
+        </div>
+        <div class='email'>
+          <h3>Name</h3>
+          <p>Title</p>
+        </div>
+        <div class='email'>
+          <h3>Name</h3>
+          <p>Title</p>
         </div>
       </div>
-      <div class="column-9 w-col w-col-9">
-        <div class="w-layout-grid grid-9">
-          <h1 class="heading-20">messaging</h1>
-          <div id="w-node-1262376b9423-4dd4f1c5" class="w-layout-grid grid-11">
-            <h1 class="heading-22">From: <br>Subject:</h1>
-            <p class="paragraph-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.<br><br>Thanks.</p>
-          </div>
-        </div>
+      <div class = 'inbox message'>
+        <h2 id='title'>Title</h2>
+        <p id = 'text'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <p id='author'>From: Andrey Borro</p>
       </div>
     </div>
   </div>
   <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="js/user-profile.js" type="text/javascript"></script>
+  <script src="js/messaging.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
