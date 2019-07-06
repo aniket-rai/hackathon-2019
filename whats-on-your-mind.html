@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Jul 05 2019 22:01:32 GMT+0000 (UTC)  -->
+<!--  Last Published: Fri Jul 05 2019 23:45:00 GMT+0000 (UTC)  -->
 <html data-wf-page="5d1fbf46ea0f5b55edac0c88" data-wf-site="5d1ee88d0663cd2e6c1ef239">
 <head>
   <meta charset="utf-8">
@@ -22,48 +22,7 @@
   <div>
     <div class="w-row">
       <div class="column w-col w-col-6">
-        <a href='dashboard.html'><h1 class="heading dashboard">propos</h1></a>
-          <style>
-            .a:hover, a:visited, a:link, a:active {
-              text-decoration: none;
-              color:#000000;
-            }
-
-            .heading {
-              max-width: 250px;
-              margin: 20px auto 0px;
-              padding-right: 0px;
-              padding-bottom: 12px;
-              background-color: #2ecc71;
-              font-family: Montserrat, sans-serif;
-              font-size: 53px;
-              line-height: 57px;
-              font-weight: 700;
-              text-align: center;
-              -webkit-user-select: none; /* Safari */        
-              -moz-user-select: none; /* Firefox */
-              -ms-user-select: none; /* IE10+/Edge */
-              user-select: none; /* Standard */
-            }
-
-            .heading.dashboard {
-              max-width: 250px;
-              margin: 20px auto 0px;
-              padding-right: 0px;
-              padding-bottom: 12px;
-              background-color: #2ecc71;
-              font-family: Montserrat, sans-serif;
-              font-size: 53px;
-              line-height: 57px;
-              font-weight: 700;
-              text-align: center;
-              -webkit-user-select: none; /* Safari */        
-              -moz-user-select: none; /* Firefox */
-              -ms-user-select: none; /* IE10+/Edge */
-              user-select: none; /* Standard */
-              margin-left: 10px;
-            }
-        </style>
+        <h1 class="heading dashboard">propos</h1>
       </div>
       <div class="column-2 w-col w-col-6">
         <div class="w-row">
@@ -82,7 +41,14 @@
                   <div class="dropdown-toggle w-dropdown-toggle">
                     <div class="w-icon-dropdown-toggle"></div>
                   </div>
-                  <nav class="w-dropdown-list"><a href="#" class="dropdown-link w-dropdown-link">Profile</a><a href="#" class="dropdown-link-2 w-dropdown-link">Settings</a><a href="#" class="dropdown-link-3 w-dropdown-link">Sign Out</a></nav>
+                  <nav class="dropdown-list-manager w-dropdown-list">
+                    <a href="#" class="dropdown-link w-dropdown-link">Profile</a>
+                    <a href="#" class="dropdown-link-2 w-dropdown-link">Settings</a>
+                    <a href="create-employee.html" class="dropdown-link-7 w-dropdown-link w-current">Employee<br>Creation</a>
+                    <a href="#" class="dropdown-link-8 w-dropdown-link">Company<br>Goals</a>
+                    <a href="#" class="dropdown-link-9 w-dropdown-link">Review<br>Edit</a>
+                    <a id='signout' class="dropdown-link-3 w-dropdown-link">Sign Out</a>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -95,26 +61,28 @@
     <h1 class="heading-16">what&#x27;s on your mind?</h1>
   </div>
   <div class="section-5">
-    <div class="form-block-3 w-form">
-      <form id="email-form" name="email-form" data-name="Email Form">
-        <label for="name" class="field-label-10">someone you want to shout out?</label>
-        <textarea placeholder="tell us their name!" maxlength="5000" id="field" name="field" autofocus="true" class="textarea-4 w-input"></textarea>
-        <label class="w-checkbox checkbox-field">
-          <input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" checked="" class="w-checkbox-input">
-          <span class="checkbox-label w-form-label">Stay Anonymous</span>
-        </label>
-        <label class="field-label-11">unhappy, stressed, worried?</label>
-        <textarea name="field-2" maxlength="5000" id="field-2" placeholder="tell us what happened - your manager will get this directly" class="textarea-5 w-input"></textarea>
-        <label class="w-checkbox checkbox-field-2">
-          <input type="checkbox" id="checkbox-2" name="checkbox-2" data-name="Checkbox 2" checked="" class="w-checkbox-input">
-          <span class="w-form-label">Stay Anonymous</span>
-        </label>
-        <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-5 w-button"></form>
-      <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
+    <div class="columns-2 w-row">
+      <div class="column-6 w-col w-col-6">
+        <div class="w-form">
+          <form id="email-form-2" name="email-form-2" data-name="Email Form 2"><label for="f_name" class="field-label-10">want to send a friendly message?</label><input type="text" class="text-field-8 w-input" autofocus="true" maxlength="256" name="f_name" data-name="f_name" placeholder="First Name" id="f_name"><input type="text" class="text-field-9 w-input" autofocus="true" maxlength="256" name="l_name" data-name="l_name" placeholder="Last Name" id="l_name"><textarea style="resize: none;" name="msg" maxlength="5000" id="msg" placeholder="write your message here!" data-name="msg" autofocus="true" class="textarea-6 w-input"></textarea><label class="w-checkbox checkbox-field"><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" checked="" class="w-checkbox-input"><span class="checkbox-label w-form-label">Stay Anonymous</span></label><input type="submit" value="Send" data-wait="Please wait..." class="submit-button-6 w-button"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
       </div>
-      <div class="w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.</div>
+      <div class="column-7 w-col w-col-6">
+        <div class="w-form">
+          <form id="email-form-3" name="email-form-3" data-name="Email Form 3"><label class="field-label-11">unhappy, stressed, worried?</label><textarea name="field-2" maxlength="5000" id="field-2" placeholder="tell us what happened - your manager will get this directly" class="textarea-5 w-input" rows = "4.9" cols="68" style="resize: none;"></textarea><label class="w-checkbox checkbox-field" style="margin-top: 10px;"><input style="margin-top: 12px;" type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" checked="" class="w-checkbox-input"><span class="checkbox-label w-form-label" style="margin-top: 7.5px;">Stay Anonymous</span></label><input type="submit" value="Send" data-wait="Please wait..." class="submit-button-5 w-button"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
