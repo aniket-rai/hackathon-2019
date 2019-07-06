@@ -16,7 +16,7 @@ function submitEmployee(){
 
     if(fn && ln && e && p){
         emp = load('employees')
-        emp.push({'firstname': fn, 'lastname': ln, 'password': p, 'email': e, 'scores': [3]})
+        emp.push({'firstname': fn, 'lastname': ln, 'password': p, 'email': e, 'scores': [3], 'manager': load('current_user').email})
         store('employees', emp)
         window.location.href = 'dashboard.html'
     }

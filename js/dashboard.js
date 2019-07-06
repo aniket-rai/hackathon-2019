@@ -6,7 +6,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-
+function submitReport(){
+    c = load('current_user')
+    c.scores.push(parseInt(document.getElementById('slider').value))
+    store('current_user', c)
+    emp = load('employees')
+    emp.forEach(function(item){
+        if(item.email === c.email){
+            item.scores = c.scores
+        }
+    })
+    store('employees', emp)
+    updateRating()
+}
 
 
 function updateScore(){
