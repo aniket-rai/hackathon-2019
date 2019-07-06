@@ -173,9 +173,25 @@
                   text-shadow: 2px 2px 2px #333;
                 }
 
+                .submit-button-2 {
+                  margin-top: -5px;
+                  margin-left: 0px;
+                  background-color: #e74c3c;
+                  font-family: Montserrat, sans-serif;
+                }
+
+                #perf {
+                  margin-top: 15px;
+                }
+
+                .grid-3{
+                  box-shadow: 1px 1px 3px 0 #000;
+                  padding: 10px 10px 0px 10px;
+                }
+
                 </style>
 
-            <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button" onclick='submitReport()' >
+            <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button" onclick='submitReport(); this.disabled = true; this.value = "Submitted" '>
           </div>
         </div>
       </div>
