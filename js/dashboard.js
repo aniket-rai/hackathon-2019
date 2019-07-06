@@ -2,6 +2,13 @@ document.addEventListener("DOMContentLoaded", function(){
     updateScore()
     updateRating()
     //store('employees', [{'email': 'andreyborro@gmail.com', 'firstname': 'Andrey', 'lastname':'Borro', 'password': 'yeet', 'scores': [3, 4]}])
+    store('goals', ['facilitate customer trust', 'engage outdated methodologies', 'nuture ethical work habits and mindsets'])
+
+    g = load('goals')
+    document.getElementById('g1').textContent = '- ' + g[0];
+    document.getElementById('g2').textContent = '- ' + g[1];
+    document.getElementById('g3').textContent = '- ' + g[2];
+
 });
 
 
