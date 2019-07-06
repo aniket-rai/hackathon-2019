@@ -32,12 +32,21 @@ document.addEventListener("DOMContentLoaded", function(){
         b = document.getElementById('topdiv')
         b.appendChild(d)
         b.appendChild(d4)
+
+        d.addEventListener('click', my_callback(item))
     })
   })
 
 
+  function my_callback(item){
+    return function(){
+      store('loaded_profile', item)
+      window.location.href = 'review-view.html'
+    }
+  }
+
   function getRating(item){
-    scores = item.scores
+    scores = item.scores_m
     sum = scores.reduce(function(a,b){
         return a + b
     })

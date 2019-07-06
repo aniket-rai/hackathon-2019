@@ -4,14 +4,23 @@ var password
 
 document.addEventListener("DOMContentLoaded", function(){
     //store('employees', [{'email': 'andreyborro@gmail.com', 'firstname': 'Andrey', 'lastname':'Borro', 'password': 'yeet', 'scores': [5,5,5,4,3,5,3,1]}])
-    if(load('current_user')){
-        window.location.href = 'dashboard.html'
-    }
+    q = load('questions')
+    document.getElementById('q1').textContent = q[0]
+    document.getElementById('q2').textContent = q[1]
+    document.getElementById('q3').textContent = q[2]
+
+    p = load('loaded_profile')
+
+    document.getElementById('header').textContent = 'review - ' + p.firstname + ' ' + p.lastname + ' [ ' + p.scores_m.slice(-1)[0] + ' ] '
+
+    a = p.answers
+
+    document.getElementById('field').textContent= a[0]
+    document.getElementById('field-2').textContent= a[1]
+    document.getElementById('field-3').textContent= a[2]
 })
 
-document.getElementById('LoginButton').addEventListener("click", function(){
-   
-});
+
 
 
 
